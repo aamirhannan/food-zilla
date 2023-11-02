@@ -26,10 +26,12 @@ const Body = () => {
         value={searchText} 
         onChange={(e)=>{
         setSearchText(e.target.value)
+
         if(e.target.value.length == 0){
             setrestaurants(restaurantList)
         }}
         }>
+          
       </input>
 
       <button
